@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB0B695C-3100-4C27-8253-9BFABDC2732C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Debug</RootNamespace>
-    <AssemblyName>Debug</AssemblyName>
+    <ProjectGuid>{ED1C2F74-A65D-4FFA-B483-9EA88C7BAC87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InputReader</RootNamespace>
+    <AssemblyName>InputReader</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -48,18 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="sol_Joystick.cs" />
+    <Compile Include="sol_JoystickManager.cs" />
+    <Compile Include="sol_JoystickProperties.cs" />
+    <Compile Include="sol_JoystickListener.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Prefs\App.config" />
     <None Include="Prefs\packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\InputReader\sol_Core.csproj">
-      <Project>{ed1c2f74-a65d-4ffa-b483-9ea88c7bac87}</Project>
-      <Name>sol_Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
