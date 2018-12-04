@@ -8,6 +8,12 @@ using SharpDX;
 
 namespace sol_Core
 {
+    /// <summary>
+    ///  TODO
+    /// 
+    /// Need to start the joystick capture methods 
+    /// 
+    /// </summary>
     public class sol_JoystickListener
     {
         //Variable Decleration

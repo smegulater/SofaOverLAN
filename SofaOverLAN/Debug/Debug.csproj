@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Prefs\App.config" />
     <None Include="Prefs\packages.config" />
   </ItemGroup>
