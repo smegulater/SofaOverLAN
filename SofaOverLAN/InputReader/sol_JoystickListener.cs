@@ -12,7 +12,8 @@ namespace sol_Core
     {
         //Variable Decleration
 
-        private DirectInput directInput = new DirectInput();
+        private DirectInput _directInput;
+        private sol_Joystick _joystick;
 
         #region Property Declaration
 
@@ -29,19 +30,15 @@ namespace sol_Core
 
         #region Constructor
 
-        public sol_JoystickListener()
+        public sol_JoystickListener(sol_Joystick joystick)
         {
-            directInput = new DirectInput();
+            _directInput = new DirectInput();
+            _joystick = joystick;
         }
 
         #endregion
 
-        // Read input from a 
-
-
-
-
-        
+               
         public void GetJoystickInput(DeviceInstance device)
         {
             throw new NotImplementedException();
