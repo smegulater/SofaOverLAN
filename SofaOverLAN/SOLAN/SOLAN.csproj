@@ -100,5 +100,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sol_Core\sol_Core.csproj">
+      <Project>{ed1c2f74-a65d-4ffa-b483-9ea88c7bac87}</Project>
+      <Name>sol_Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
