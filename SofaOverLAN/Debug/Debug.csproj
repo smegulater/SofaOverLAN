@@ -56,7 +56,7 @@
     <None Include="Prefs\packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InputReader\sol_Core.csproj">
+    <ProjectReference Include="..\sol_Core\sol_Core.csproj">
       <Project>{ed1c2f74-a65d-4ffa-b483-9ea88c7bac87}</Project>
       <Name>sol_Core</Name>
     </ProjectReference>
